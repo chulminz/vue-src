@@ -34,7 +34,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Use the secret
+      - name: Use Personal Access Token
         run: echo ${{ secrets.VUE_DIST }}
         
       - name: Checkout Another Repository
