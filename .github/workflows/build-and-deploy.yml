@@ -39,6 +39,10 @@ jobs:
         with:
           repository: chulminz/vue-dist
 
+      - name: All Clear
+        run: |
+          rm -rf *
+
       - name: Download Build Artifacts
         uses: actions/download-artifact@v2
         with:
