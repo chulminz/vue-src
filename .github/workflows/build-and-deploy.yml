@@ -25,7 +25,7 @@ jobs:
         run: npm run build
 
       - name: Copy Build Artifacts to Another Repository
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: dist
           path: dist
@@ -44,7 +44,7 @@ jobs:
           rm -rf *
 
       - name: Download Build Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: dist
           path: ./
