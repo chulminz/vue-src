@@ -36,6 +36,7 @@ jobs:
     steps:
       - name: Use the secret
         run: echo ${{ secrets.VUE_DIST }}
+        
       - name: Checkout Another Repository
         uses: actions/checkout@v2
         with:
