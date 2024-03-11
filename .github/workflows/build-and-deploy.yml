@@ -39,7 +39,7 @@ jobs:
       - name: Checkout Another Repository
         uses: actions/checkout@v4
         with:
-          repository: chulminz/vue-dist
+          repository: chulminz/chulminz.github.io
 
       - name: All Clear
         run: |
@@ -62,4 +62,4 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           git add .
           git commit -m "Update dist folder"
-          git push git@github.com:chulminz/vue-dist.git
+          git push git@github.com:chulminz/chulminz.github.io.git
